@@ -1,0 +1,48 @@
+<footer class="site-footer">
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-5 footer-brand">
+        <a routerLink="/" class="footer-logo">{{ siteTitle }}</a>
+        <p class="footer-tagline">{{ tagline }}</p>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-3">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul class="list-unstyled">
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/page/donations">Donations</a></li>
+            <li><a routerLink="/page/about">About</a></li>
+            <li><a routerLink="/page/contact">Contact</a></li>
+            <li><a routerLink="/page/affiliate-disclosure">Affiliate Disclosure</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      @if (socialLinks.length > 0) {
+        <div class="col-6 col-md-3 col-lg-4 footer-social">
+          <p class="social-label">Find us</p>
+          <ul class="list-unstyled social-links">
+            @for (link of socialLinks; track link.label) {
+              <li>
+                <a [href]="link.href" target="_blank" rel="noopener noreferrer" [attr.aria-label]="link.label">
+                  {{ link.label }}
+                </a>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {{ currentYear }} {{ siteTitle }}.</p>
+      <p class="footer-affiliate">
+        As an <a routerLink="/page/affiliate-disclosure">Amazon Associate</a>, we earn from qualifying purchases.
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,38 @@
+.text-page {
+  padding: 3rem 0 5rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.prose {
+  max-width: var(--content-width);
+  margin: 0 auto;
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--color-text);
+    margin-bottom: 1.25rem;
+  }
+}
+
+.contact-email {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+
+  a {
+    color: var(--color-accent);
+  }
+}

@@ -1,0 +1,72 @@
+<section class="donations-page">
+  <div class="container">
+
+    <header class="page-header">
+      <h1 class="page-title">{{ title }}</h1>
+      <p class="page-lede">{{ intro }}</p>
+      @if (!store.loading() && !store.error() && store.totalItems() > 0) {
+        <p class="page-count">{{ store.totalItems() }} items on the wish list</p>
+      }
+    </header>
+
+    @if (store.error()) {
+      <div class="error-state text-center py-5">
+        <p>Something went wrong loading the wish list. Please try again.</p>
+        <button class="btn btn-accent" (click)="retry()">Retry</button>
+      </div>
+    }
+
+    @if (store.loading()) {
+      <div class="skeleton-group">
+        @for (i of skeletonItems; track i) {
+          <div class="skeleton skeleton-item"></div>
+        }
+      </div>
+    }
+
+    @if (!store.loading() && !store.error()) {
+      @if (store.totalItems() === 0) {
+        <p class="empty-state">The wish list is empty for the moment.</p>
+      }
+
+      @for (group of store.groups(); track group.category) {
+        <section class="donation-group">
+          <h2 class="donation-group-title">{{ group.label }}</h2>
+          <ul class="donation-list">
+            @for (item of group.items; track item.id) {
+              <li class="donation-item">
+                <a
+                  class="donation-link"
+                  [href]="item.url"
+                  target="_blank"
+                  [attr.rel]="rel"
+                >
+                  @if (item.imageUrl) {
+                    <img class="donation-thumb" [src]="item.imageUrl" [alt]="item.title" loading="lazy" />
+                  }
+                  <span class="donation-body">
+                    <span class="donation-title">{{ item.title }}</span>
+                    @if (item.note) {
+                      <span class="donation-note">{{ item.note }}</span>
+                    }
+                  </span>
+                  @if (item.price) {
+                    <span class="donation-price">{{ item.price }}</span>
+                  }
+                  <span class="donation-cta" aria-hidden="true">→</span>
+                </a>
+              </li>
+            }
+          </ul>
+        </section>
+      }
+
+      <p class="donation-disclosure">
+        These are affiliate links — if you buy something we may earn a small commission at no
+        extra cost to you. See the
+        <a routerLink="/page/affiliate-disclosure">affiliate disclosure</a> for the full story.
+      </p>
+    }
+
+  </div>
+</section>

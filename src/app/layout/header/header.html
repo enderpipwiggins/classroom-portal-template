@@ -1,0 +1,39 @@
+<header class="site-header">
+  <nav class="navbar container">
+
+    <a routerLink="/" class="navbar-brand site-brand" (click)="closeMenu()">
+      <span class="brand-title">{{ siteTitle }}</span>
+    </a>
+
+    <button
+      class="menu-toggle navbar-toggler border-0"
+      [class.open]="menuOpen"
+      (click)="toggleMenu()"
+      aria-label="Toggle navigation"
+      [attr.aria-expanded]="menuOpen"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="site-nav" [class.open]="menuOpen" aria-label="Main navigation">
+      <ul class="navbar-nav nav-list">
+        @for (link of navLinks; track link.path) {
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLink]="link.path"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: link.path === '/' }"
+              (click)="closeMenu()"
+            >
+              {{ link.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+
+  </nav>
+</header>

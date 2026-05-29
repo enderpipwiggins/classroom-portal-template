@@ -1,0 +1,36 @@
+// ===========================================================================
+// THEME 2 — "Press" (original recreation inspired by CSS Zen Garden #214).
+//
+// Mood: bold editorial / newspaper. A big high-contrast serif display face,
+// a clean grotesk for body copy, sharp corners, ink-black on warm paper with
+// a single red accent. Confident and grown-up.
+//
+// This is an original interpretation, not a copy of the Zen Garden CSS.
+// ===========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --color-bg:        #f7f4ee;
+  --color-surface:   #ffffff;
+  --color-border:    #d8d2c4;
+  --color-text:      #1a1a1a;
+  --color-muted:     #6b6459;
+  --color-accent:    #b3261e;
+  --color-accent-lt: #861a14;
+  --color-ink:       #111111;
+
+  --font-display: 'Playfair Display', 'Times New Roman', serif;
+  --font-body:    'Work Sans', system-ui, sans-serif;
+  --font-mono:    ui-monospace, monospace;
+
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+
+  --shadow-sm: 0 1px 0 rgba(17, 17, 17, 0.12);
+  --shadow-md: 0 2px 0 rgba(17, 17, 17, 0.14);
+  --shadow-lg: 0 4px 0 rgba(17, 17, 17, 0.16);
+
+  --max-width:     1140px;
+  --content-width: 680px;
+}

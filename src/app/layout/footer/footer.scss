@@ -1,0 +1,84 @@
+.site-footer {
+  background: var(--color-ink);
+  color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  margin-top: 4rem;
+}
+
+// ── Brand ──────────────────────────────────────────────────────────────────
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-bg);
+  display: block;
+  margin-bottom: 0.75rem;
+  text-decoration: none !important;
+
+  &:hover {
+    color: var(--color-accent);
+    text-decoration: none !important;
+  }
+}
+
+.footer-tagline {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+// ── Nav + Social ───────────────────────────────────────────────────────────
+.footer-nav li,
+.social-links li {
+  margin-bottom: 0.5rem;
+
+  a {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+  }
+}
+
+.social-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 0.75rem;
+}
+
+// ── Bottom Bar ────────────────────────────────────────────────────────────
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1rem 0;
+
+  p {
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    margin: 0;
+  }
+}
+
+.footer-affiliate {
+  margin-top: 0.4rem !important;
+  font-size: 0.72rem !important;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}

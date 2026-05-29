@@ -1,0 +1,36 @@
+// ===========================================================================
+// THEME 1 — "Garden" (original recreation inspired by CSS Zen Garden #215).
+//
+// Mood: fresh, leafy, and airy. Humanist sans-serif type, generous rounding,
+// soft sage-and-moss palette. A calm, growing-things feel — well suited to a
+// classroom that wants something warm but uncluttered.
+//
+// This is an original interpretation, not a copy of the Zen Garden CSS.
+// ===========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+:root {
+  --color-bg:        #f4f7ec;
+  --color-surface:   #ffffff;
+  --color-border:    #d4e0c4;
+  --color-text:      #2c3a2a;
+  --color-muted:     #6f8166;
+  --color-accent:    #5c8a3a;
+  --color-accent-lt: #3f6626;
+  --color-ink:       #233019;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body:    'Source Sans 3', system-ui, sans-serif;
+  --font-mono:    ui-monospace, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  --shadow-sm: 0 2px 6px rgba(45, 70, 30, 0.08);
+  --shadow-md: 0 8px 24px rgba(45, 70, 30, 0.12);
+  --shadow-lg: 0 16px 48px rgba(45, 70, 30, 0.16);
+
+  --max-width:     1080px;
+  --content-width: 700px;
+}

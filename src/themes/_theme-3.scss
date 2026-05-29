@@ -1,0 +1,36 @@
+// ===========================================================================
+// THEME 3 — "Dusk" (original recreation inspired by CSS Zen Garden #209).
+//
+// Mood: dark mode. Deep indigo background, soft off-white text, a luminous
+// teal-cyan accent and monospace touches. Modern and low-glare — good for
+// evening browsing and a techy feel.
+//
+// This is an original interpretation, not a copy of the Zen Garden CSS.
+// ===========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --color-bg:        #11131f;
+  --color-surface:   #1b1e2e;
+  --color-border:    #2c3148;
+  --color-text:      #d8dcea;
+  --color-muted:     #8b91ad;
+  --color-accent:    #3ad0c4;
+  --color-accent-lt: #66e2d7;
+  --color-ink:       #f2f4fb;
+
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.40);
+  --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.50);
+  --shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.60);
+
+  --max-width:     1080px;
+  --content-width: 700px;
+}

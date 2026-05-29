@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sample-1",
+    "title": "Washable Crayons, Pack of 24",
+    "url": "https://www.amazon.com/dp/B00000000A?tag=your-associate-tag-20",
+    "category": "art-supplies",
+    "asin": "B00000000A",
+    "note": "The classic 24-pack. We go through these fast!"
+  },
+  {
+    "id": "sample-2",
+    "title": "Watercolor Paint Set",
+    "url": "https://www.amazon.com/dp/B00000000B?tag=your-associate-tag-20",
+    "category": "art-supplies"
+  },
+  {
+    "id": "sample-3",
+    "title": "Wide-Ruled Composition Notebooks (12-pack)",
+    "url": "https://www.amazon.com/dp/B00000000C?tag=your-associate-tag-20",
+    "category": "paper-and-notebooks"
+  },
+  {
+    "id": "sample-4",
+    "title": "Sticky Notes, Assorted Colors",
+    "url": "https://www.amazon.com/dp/B00000000D?tag=your-associate-tag-20",
+    "category": "paper-and-notebooks"
+  },
+  {
+    "id": "sample-5",
+    "title": "Hand Sanitizer, 2 Liter Refill",
+    "url": "https://www.amazon.com/dp/B00000000E?tag=your-associate-tag-20",
+    "category": "classroom-care",
+    "note": "Cold and flu season essential."
+  },
+  {
+    "id": "sample-6",
+    "title": "Facial Tissue, Box of 12",
+    "url": "https://www.amazon.com/dp/B00000000F?tag=your-associate-tag-20",
+    "category": "classroom-care"
+  },
+  {
+    "id": "sample-7",
+    "title": "Read-Aloud Picture Book Collection",
+    "url": "https://www.amazon.com/dp/B00000000G?tag=your-associate-tag-20",
+    "category": "books"
+  }
+]
