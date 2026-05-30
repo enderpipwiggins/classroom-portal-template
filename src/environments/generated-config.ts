@@ -22,6 +22,7 @@ export const generatedConfig = {
   donationsTitle: "Our Classroom Wish List",
   donationsIntro: "These are the supplies our class is hoping for this year. Each link goes straight to the item on Amazon.",
   contactEmail: "teacher@example.com",
+  shippingAddress: "",
   amazonAssociateTag: "",
   storageProvider: "static-json" as StorageProvider,
   googleSheetCsvUrl: "",

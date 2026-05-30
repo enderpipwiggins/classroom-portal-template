@@ -10,8 +10,8 @@ but the copy-each-item process is straightforward, and for a long list you can
 do a handful at a time.
 
 > **New here?** This page assumes you've read
-> [Procedure 3 — Get a tracking link for a product](teacher-guide.md#procedure-3-get-a-tracking-link-for-a-product)
-> and [Procedure 4 — Add a link to your donations page](teacher-guide.md#procedure-4-add-a-link-to-your-donations-page).
+> [Procedure 6 — Get a tracking link for a product](teacher-guide.md#procedure-6-get-a-tracking-link-for-a-product)
+> and [Procedure 7 — Add a link to your donations page](teacher-guide.md#procedure-7-add-a-link-to-your-donations-page).
 > This page is just those two steps, done in a row for a whole list.
 
 ---
@@ -21,10 +21,10 @@ do a handful at a time.
 - **Be signed in to your Amazon Associates account.** That's what makes the
   black **SiteStripe** bar appear on product pages and puts *your* tracking ID
   on the links you copy. (See
-  [Procedure 1](teacher-guide.md#procedure-1-create-an-amazon-associates-account).)
+  [Procedure 5](teacher-guide.md#procedure-5-create-an-amazon-associates-account).)
 - **Have your list open where the site reads it.** For most teachers that's the
   Google Sheet from
-  [Procedure 4](teacher-guide.md#procedure-4-add-a-link-to-your-donations-page).
+  [Procedure 7](teacher-guide.md#procedure-7-add-a-link-to-your-donations-page).
   Keep it open beside your browser.
 - **Know what goes in the `url` column.** The site stores the *whole* tracking
   link you paste — it does **not** build a link for you from the ASIN. So each

@@ -9,6 +9,16 @@
       }
     </header>
 
+    @if (shippingAddress) {
+      <aside class="shipping-box surface">
+        <h2 class="shipping-title">Ship donations to our classroom</h2>
+        <address class="shipping-address">{{ shippingAddress }}</address>
+        <p class="shipping-hint">
+          Buying a gift? Enter this address at Amazon checkout to send it straight to us. Thank you!
+        </p>
+      </aside>
+    }
+
     @if (store.error()) {
       <div class="error-state text-center py-5">
         <p>Something went wrong loading the wish list. Please try again.</p>

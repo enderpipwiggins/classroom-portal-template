@@ -70,7 +70,7 @@ requirement — the free `*.vercel.app` address works fine.
 | Domain registration / renewal | typically **$10–$20 per year** |
 
 This is a yearly cost, and the only one that exists purely for polish. See
-[Procedure 9 in the Teacher's Guide](teacher-guide.md#procedure-9-reserve-a-domain-name-and-connect-it).
+[Procedure 8 in the Teacher's Guide](teacher-guide.md#procedure-8-reserve-a-domain-name-and-connect-it).
 
 ---
 

@@ -24,6 +24,15 @@ export const routes: Routes = [
         (m) => m.AffiliateDisclosure,
       ),
   },
+  // ─── Example route (disabled) ─────────────────────────────────────────────
+  // A ready-made pattern for adding your own page. Uncomment to enable it at
+  // /page/example, then see docs/adding-a-page.md for the full walkthrough.
+  // Keep new routes ABOVE the '**' wildcard below, or they'll never match.
+  // {
+  //   path: 'page/example',
+  //   loadComponent: () => import('./pages/example/example').then((m) => m.Example),
+  // },
+
   {
     path: '**',
     loadComponent: () =>

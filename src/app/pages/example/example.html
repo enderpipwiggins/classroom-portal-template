@@ -1,0 +1,28 @@
+<!--
+  These shared layout classes (text-page, container, page-header, page-title,
+  prose) give every text page the same look. Reuse them in your own pages.
+-->
+<section class="text-page">
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title">Example page</h1>
+    </header>
+
+    <div class="prose">
+      <!-- EDIT ME: replace this with your page's real content. -->
+      <p>
+        This is an example page for {{ siteTitle }}. If you can see it in your browser at
+        <code>/page/example</code>, you've successfully wired up a new route.
+      </p>
+      <p>
+        Copy the folder <code>src/app/pages/example/</code> to start a page of your own. The
+        step-by-step guide lives in <code>docs/adding-a-page.md</code>.
+      </p>
+      <p>
+        <!-- In-app links use routerLink (not href) so navigation stays instant and
+             client-side. -->
+        When you're done here, head back to the <a routerLink="/">home page</a>.
+      </p>
+    </div>
+  </div>
+</section>
