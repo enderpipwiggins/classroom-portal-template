@@ -16,6 +16,13 @@ extra cost to the buyer. The intent is that those commissions go into a
 **classroom fund** — covering hosting costs, supplies that weren't donated, and
 small extras like an end-of-year celebration.
 
+> **A note on the money (not legal/tax advice):** these commissions are affiliate
+> *income* to whoever owns the affiliate account — not donations — so they're
+> taxable regardless of how they're spent. Teachers who want the money kept fully
+> out of personal hands often have a **PTA, booster club, or school foundation**
+> hold the account instead. See [docs/disclosures.md](docs/disclosures.md), and
+> consult a tax professional and your district.
+
 ## Who it's for
 
 - **Primarily:** elementary-school teachers and the people helping them (a

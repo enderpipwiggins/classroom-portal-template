@@ -88,3 +88,34 @@ function — excess traffic beyond hobby limits, custom development, paid
 advertising, third-party services you add, or taxes on commissions you earn —
 are **out of scope and are not estimated**. You are responsible for any such
 costs and for any taxes owed on affiliate income.
+
+---
+
+## 5. How commissions are treated (and who holds the account)
+
+> **Not legal or tax advice.** This section is general information to help you ask
+> the right questions. Talk to a tax professional and your school district before
+> setting anything up.
+
+**Commissions are income, not donations.** When someone buys through an affiliate
+link, they're *purchasing a product* — not making a tax-deductible donation. The
+store pays you an **advertising commission**, which is **reportable income to
+whoever's name is on the affiliate account**, no matter how it's later spent.
+Spending it on classroom supplies may be deductible, but it doesn't reclassify
+the income — and routing it through a personal **trust or escrow doesn't change
+that** either.
+
+**Who holds the affiliate account matters more than where the money sits:**
+
+- **An individual (simplest).** Set up in minutes, but the commissions are *your*
+  taxable income. Keep records, and expect a 1099 if you cross the threshold.
+- **A school, PTA/PTO, booster club, or school foundation (cleanest for
+  "classroom-only").** If a qualifying organization holds the account, the money
+  is the organization's from the start — never personal income to you — and is
+  spent as ordinary program funds. Note that affiliate income can raise
+  **unrelated-business-income-tax (UBIT)** questions for a nonprofit, so have the
+  organization's treasurer or a CPA confirm the setup.
+
+**District policy.** Some districts have rules about staff soliciting, fundraising,
+or holding accounts tied to classroom activity. Check with your administration
+whichever option you choose.
