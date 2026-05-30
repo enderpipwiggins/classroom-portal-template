@@ -152,6 +152,8 @@ time. See [`.env.example`](.env.example) for the annotated source of truth.
   Sheets, a JSON file, Airtable, Supabase, Notion, and Thirsty Affiliates.
 - **[Importing Your Amazon Wish List](docs/from-amazon-wishlist.md)** — turn an
   existing Amazon Wish List into your donations page, one tracking link at a time.
+- **[Using Other Affiliate Programs](docs/other-affiliate-programs.md)** — use
+  Walmart or other retailers' affiliate links (only Amazon gets auto images/prices).
 - **[Customizing the Look](docs/customizing-css.md)** — choosing a theme and
   editing your own colors and fonts through the GitHub website.
 - **[Adding a New Page](docs/adding-a-page.md)** — for developers: the
