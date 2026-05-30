@@ -11,10 +11,17 @@ nothing breaks if you take a week between steps.
 **The big picture, in five moves:**
 
 1. Put your website's files online (GitHub).
-2. Turn those files into a live website (Vercel) — **this part is free.**
+2. Turn those files into a live website (Vercel) — **free to launch.**
 3. Add your supply list (a Google Sheet or a file you edit on GitHub).
 4. Sign up for Amazon Associates so your links can earn for the classroom.
 5. (Later, optional) Turn on automatic prices and pictures (PAAPI).
+
+> **One cost to know up front:** launching and running the site is free, but
+> Vercel's free **Hobby** tier is for *non-commercial* use. Once your Amazon
+> links start earning commissions, Vercel expects you to move to its **Pro**
+> plan (about **$20/month**) — which is exactly what the classroom fund is meant
+> to cover. It's not free forever once it's earning; see
+> [Costs Over Time](costs.md) for the full picture.
 
 A quick note on order: you can build and launch your **website first** (moves 1–3)
 and sign up for **Amazon Associates** (move 4) whenever you're ready — Amazon
@@ -142,6 +149,10 @@ How you add items depends on which storage method you chose. The recommended,
 no-code method is **Google Sheets**. (For the full comparison of methods, see
 [Link Storage Options](link-storage-options.md).)
 
+> **Already keep an Amazon Wish List?** See
+> [Importing Your Amazon Wish List](from-amazon-wishlist.md) for a batch-friendly
+> way to turn an existing list into your donations page.
+
 ### Using Google Sheets (recommended)
 
 **One-time setup:**
@@ -211,6 +222,11 @@ stored and ready to deploy.
 
 Vercel turns your GitHub files into a real, live website — for free on the
 **Hobby** tier.
+
+> **Heads-up:** the Hobby tier is free for *non-commercial* use. Once your site
+> is earning Amazon commissions, Vercel expects you to upgrade to **Pro** (about
+> **$20/month**). Budget for it as your site starts to earn — see
+> [Costs Over Time](costs.md#stage-1--approved-and-earning).
 
 1. Go to **https://vercel.com** and click **Sign up**.
 2. Choose **Continue with GitHub** and authorize Vercel to see your
@@ -313,8 +329,10 @@ you've made your first three sales.
 it loads fast and shows up well in search engines and link previews. You don't
 need to do anything about it.
 
-**Vercel** — the free hosting service that turns your GitHub files into a live
-website.
+**Vercel** — the hosting service that turns your GitHub files into a live
+website. Free on the **Hobby** tier for non-commercial use; once your site earns
+commissions, Vercel expects you to move to **Pro** (about **$20/month**). See
+[Costs Over Time](costs.md#stage-1--approved-and-earning).
 
 ---
 

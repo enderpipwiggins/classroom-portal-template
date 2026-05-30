@@ -29,6 +29,41 @@ if (env.SOCIAL_LINKS_JSON) {
   }
 }
 
+const donationsTitle = env.DONATIONS_TITLE || 'Our Classroom Wish List';
+
+// The "how it works" steps shown on the landing page. Teachers can override the
+// whole list with HOW_IT_WORKS_JSON (an array of {title, body}) — a good place
+// to explain where the commission goes — or pass an empty array to hide the
+// section entirely. Falls back to these three default steps.
+const defaultHowItWorks = [
+  {
+    title: 'Browse the list',
+    body: `Visit the ${donationsTitle} to see exactly what our classroom needs this year.`,
+  },
+  {
+    title: 'Pick an item',
+    body: 'Every item links straight to Amazon. Choose anything in your budget — every bit helps.',
+  },
+  {
+    title: 'Make a difference',
+    body: 'Your purchase stocks our room at no extra cost to you. Thank you for supporting our students.',
+  },
+];
+
+let howItWorks = defaultHowItWorks;
+if (env.HOW_IT_WORKS_JSON) {
+  try {
+    const parsed = JSON.parse(env.HOW_IT_WORKS_JSON);
+    if (Array.isArray(parsed)) {
+      howItWorks = parsed
+        .filter((step) => step && typeof step.title === 'string' && typeof step.body === 'string')
+        .map((step) => ({ title: step.title, body: step.body }));
+    }
+  } catch {
+    console.warn('[generate-config] HOW_IT_WORKS_JSON is not valid JSON; using the default steps.');
+  }
+}
+
 const config = {
   siteTitle: env.SITE_TITLE || 'Our Classroom Portal',
   siteTagline: env.SITE_TAGLINE || 'A little help goes a long way',
@@ -36,7 +71,7 @@ const config = {
     env.SITE_DESCRIPTION ||
     'Our classroom supply wish list. Donations through these links help stock our room at no extra cost to you.',
   siteUrl: env.SITE_URL || 'https://example.com',
-  donationsTitle: env.DONATIONS_TITLE || 'Our Classroom Wish List',
+  donationsTitle,
   donationsIntro:
     env.DONATIONS_INTRO ||
     'These are the supplies our class is hoping for this year. Each link goes straight to the item on Amazon.',
@@ -46,6 +81,7 @@ const config = {
   googleSheetCsvUrl: env.GOOGLE_SHEET_CSV_URL || '',
   themeIndex: clampThemeIndex(env.THEME_INDEX),
   socialLinks,
+  howItWorks,
 };
 
 const configTs = `// ---------------------------------------------------------------------------
@@ -57,6 +93,11 @@ export type StorageProvider = 'google-sheets' | 'static-json';
 export interface SocialLink {
   label: string;
   href: string;
+}
+
+export interface HowItWorksStep {
+  title: string;
+  body: string;
 }
 
 export const generatedConfig = {
@@ -72,6 +113,7 @@ export const generatedConfig = {
   googleSheetCsvUrl: ${j(config.googleSheetCsvUrl)},
   themeIndex: ${config.themeIndex},
   socialLinks: ${JSON.stringify(config.socialLinks)} as SocialLink[],
+  howItWorks: ${JSON.stringify(config.howItWorks)} as HowItWorksStep[],
 };
 `;
 
