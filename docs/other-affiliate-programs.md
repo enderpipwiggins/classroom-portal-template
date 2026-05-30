@@ -78,10 +78,38 @@ A common second option. Quick facts (confirm current details on Walmart's site):
 
 ---
 
+## Target Affiliate Program
+
+Another natural fit for classroom supplies. Quick facts (confirm current details
+on Target's site):
+
+- **Free to join**, run through the **Impact** network; apply at
+  **[partners.target.com](https://partners.target.com/)** (the program is called
+  "Target Partners").
+- **Commission:** varies a lot by category — roughly **1–8%**. Home & outdoor
+  living and apparel are the highest; note that **electronics, toys, and video
+  games earn no commission**, and health & beauty is about 1%.
+- **Cookie window:** **7 days** — the most generous of the programs here.
+- Target also runs **Club Target**, a creator community program (points, tiers,
+  and rewards) that replaced its older commission-based Creator Program in 2026.
+
+**How to join and add items:**
+
+1. Apply at **[partners.target.com](https://partners.target.com/)** (you'll sign
+   in through Impact). Describe your site and audience; a real, live site helps
+   approval — use your Vercel URL or custom domain.
+2. Once approved, generate a **tracking link** for the product in the Impact
+   dashboard.
+3. Paste it into the **`url`** column like any other item — leave **`asin`**
+   blank, and add your own **`imageUrl`** if you want a picture.
+4. Make sure your disclosure wording (above) mentions Target too.
+
+---
+
 ## Other programs and networks
 
-The same pattern covers most retailers. **Target**, for example, also runs its
-program through Impact. Many stores are reachable through affiliate **networks**
-like Impact, CJ (Commission Junction), Rakuten, ShareASale, or Skimlinks. As long
-as a program gives you an ordinary tracking **URL**, it drops straight into your
-list — only Amazon gets the automatic images and prices.
+The same pattern covers most retailers. Beyond Amazon, Walmart, and Target, many
+stores are reachable through affiliate **networks** like Impact, CJ (Commission
+Junction), Rakuten, ShareASale, or Skimlinks. As long as a program gives you an
+ordinary tracking **URL**, it drops straight into your list — only Amazon gets the
+automatic images and prices.
