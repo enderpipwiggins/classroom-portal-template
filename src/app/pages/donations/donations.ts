@@ -23,6 +23,7 @@ export class Donations implements OnInit {
 
   protected readonly title = environment.donationsTitle;
   protected readonly intro = environment.donationsIntro;
+  protected readonly shippingAddress = environment.shippingAddress;
   protected readonly rel = resolveRel();
 
   ngOnInit(): void {

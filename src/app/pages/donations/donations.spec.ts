@@ -6,6 +6,7 @@ import { Donations } from './donations';
 import { DonationItem } from '../../services/interfaces/donation-item';
 import { LINK_STORAGE } from '../../services/storage/link-storage';
 import { AmazonEnrichmentService } from '../../services/amazon-enrichment';
+import { environment } from '../../../environments/environment';
 
 const ITEMS: DonationItem[] = [
   { id: '1', title: 'Glue Sticks', url: 'https://a', category: 'art-supplies' },
@@ -75,6 +76,26 @@ describe('Donations (component)', () => {
     const fixture = TestBed.createComponent(Donations);
     fixture.detectChanges();
     expect(fixture.nativeElement.querySelector('.empty-state')).toBeTruthy();
+  });
+
+  it('hides the shipping address callout when none is configured', () => {
+    const fixture = TestBed.createComponent(Donations);
+    fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('.shipping-box')).toBeFalsy();
+  });
+
+  it('shows the shipping address callout when one is configured', () => {
+    const original = environment.shippingAddress;
+    (environment as { shippingAddress: string }).shippingAddress = 'Ms. Smith — Room 12';
+    try {
+      const fixture = TestBed.createComponent(Donations);
+      fixture.detectChanges();
+      const box = fixture.nativeElement.querySelector('.shipping-box');
+      expect(box).toBeTruthy();
+      expect(box.textContent).toContain('Ms. Smith — Room 12');
+    } finally {
+      (environment as { shippingAddress: string }).shippingAddress = original;
+    }
   });
 
   it('renders the image, price, and note for a fully populated item', () => {

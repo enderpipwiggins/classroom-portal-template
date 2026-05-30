@@ -33,6 +33,35 @@
   color: var(--color-muted);
 }
 
+// ── Shipping address callout ──────────────────────────────────────────────
+.shipping-box {
+  max-width: 32rem;
+  margin: 0 auto 3rem;
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+}
+
+.shipping-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-ink);
+  margin: 0 0 0.75rem;
+}
+
+.shipping-address {
+  white-space: pre-line; // honor any line breaks in the configured address
+  font-style: normal;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.shipping-hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
 // ── Groups ────────────────────────────────────────────────────────────────
 .donation-group {
   margin-bottom: 3rem;

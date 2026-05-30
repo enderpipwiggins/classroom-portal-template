@@ -54,7 +54,7 @@ Key points that affect this template:
     the price the customer sees on Amazon at checkout always governs.
 - **PAAPI eligibility.** Product Advertising API access requires qualifying
   sales first and continued compliance. See
-  [Procedure 2 in the Teacher's Guide](teacher-guide.md#procedure-2-getting-approved-and-qualifying-for-paapi).
+  [Procedure 9 in the Teacher's Guide](teacher-guide.md#procedure-9-getting-approved-and-qualifying-for-paapi).
 - **Honesty.** Don't encourage misleading clicks, and follow Amazon's rules on
   where and how links may be used (e.g., restrictions around email and offline
   use).

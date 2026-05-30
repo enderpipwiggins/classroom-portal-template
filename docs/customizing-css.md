@@ -9,7 +9,7 @@ editing a few colors and fonts. None of it requires real coding.
 ## Part 1: Pick a built-in theme
 
 Themes are chosen by a single setting, `THEME_INDEX`, which you set in Vercel
-(see [Procedure 7 in the Teacher's Guide](teacher-guide.md#procedure-7-add-or-update-environment-variables-in-vercel)).
+(see [Procedure 4 in the Teacher's Guide](teacher-guide.md#procedure-4-add-or-update-environment-variables-in-vercel)).
 
 | `THEME_INDEX` | Name | The vibe |
 | --- | --- | --- |

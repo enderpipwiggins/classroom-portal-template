@@ -33,9 +33,13 @@ of your sheet, which your site reads each time someone visits.
   add a row. Edits appear on the site the moment you save — no rebuilding, no
   GitHub.
 - **Limits:** the published sheet is publicly readable (don't put anything
-  private in it). That's fine for a public wish list.
+  private in it). That's fine for a public wish list. Publishing exposes *only
+  that one sheet* — not your Drive or any other file — so keep the list in a
+  dedicated spreadsheet. See
+  [Procedure 7 in the Teacher's Guide](teacher-guide.md#procedure-7-add-a-link-to-your-donations-page)
+  for how to publish safely (and how to stop).
 - **Cost:** free.
-- **Setup:** see [Procedure 4 in the Teacher's Guide](teacher-guide.md#procedure-4-add-a-link-to-your-donations-page).
+- **Setup:** see [Procedure 7 in the Teacher's Guide](teacher-guide.md#procedure-7-add-a-link-to-your-donations-page).
 
 Columns: `title, url, category, asin, imageUrl, note` (no `price` column —
 prices come from PAAPI).

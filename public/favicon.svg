@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="Pencil">
+  <g transform="rotate(-45 12 12)">
+    <!-- eraser -->
+    <rect x="3" y="9" width="2.4" height="6" rx="1" fill="#F2A0A6"/>
+    <!-- metal ferrule -->
+    <rect x="5.2" y="9" width="1.6" height="6" fill="#C7CCD1"/>
+    <!-- pencil body -->
+    <rect x="6.6" y="9" width="10.4" height="6" fill="#F6B819"/>
+    <!-- lower shade for a little depth -->
+    <rect x="6.6" y="12.2" width="10.4" height="2.8" fill="#E0A314"/>
+    <!-- wood tip -->
+    <polygon points="17,9 17,15 21.5,12" fill="#EBC79A"/>
+    <!-- graphite point -->
+    <polygon points="20.2,10.4 20.2,13.6 21.5,12" fill="#3B3B3B"/>
+  </g>
+</svg>
