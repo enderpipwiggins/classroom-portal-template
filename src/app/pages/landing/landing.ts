@@ -16,6 +16,7 @@ export class Landing implements OnInit {
   protected readonly tagline = environment.siteTagline;
   protected readonly description = environment.siteDescription;
   protected readonly donationsTitle = environment.donationsTitle;
+  protected readonly howItWorks = environment.howItWorks;
 
   ngOnInit(): void {
     this.seoService.setDefault();

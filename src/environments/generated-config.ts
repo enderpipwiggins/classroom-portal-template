@@ -9,6 +9,11 @@ export interface SocialLink {
   href: string;
 }
 
+export interface HowItWorksStep {
+  title: string;
+  body: string;
+}
+
 export const generatedConfig = {
   siteTitle: "Our Classroom Portal",
   siteTagline: "A little help goes a long way",
@@ -22,4 +27,5 @@ export const generatedConfig = {
   googleSheetCsvUrl: "",
   themeIndex: 0,
   socialLinks: [] as SocialLink[],
+  howItWorks: [{"title":"Browse the list","body":"Visit the Our Classroom Wish List to see exactly what our classroom needs this year."},{"title":"Pick an item","body":"Every item links straight to Amazon. Choose anything in your budget — every bit helps."},{"title":"Make a difference","body":"Your purchase stocks our room at no extra cost to you. Thank you for supporting our students."}] as HowItWorksStep[],
 };

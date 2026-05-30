@@ -14,4 +14,16 @@ describe('Landing', () => {
     expect(text).toContain(environment.siteTitle);
     expect(text).toContain(environment.siteTagline);
   });
+
+  it('renders each configured how-it-works step, numbered in order', () => {
+    const fixture = TestBed.createComponent(Landing);
+    fixture.detectChanges();
+    const steps = fixture.nativeElement.querySelectorAll('.how-it-works .step') as NodeListOf<HTMLElement>;
+    expect(steps.length).toBe(environment.howItWorks.length);
+    environment.howItWorks.forEach((step, index) => {
+      expect(steps[index].querySelector('.step-number')?.textContent).toContain(String(index + 1));
+      expect(steps[index].textContent).toContain(step.title);
+      expect(steps[index].textContent).toContain(step.body);
+    });
+  });
 });

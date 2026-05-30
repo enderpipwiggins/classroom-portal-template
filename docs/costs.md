@@ -21,12 +21,14 @@ Everything needed to get a live, working site costs nothing:
 | Item | Cost | Notes |
 | --- | --- | --- |
 | GitHub account & repository | **Free** | Free plan is plenty. |
-| Vercel hosting (Hobby tier) | **Free** | Generous limits for a classroom site. |
+| Vercel hosting (Hobby tier) | **Free** *(while non-commercial)* | Generous limits for a classroom site — but the Hobby tier is for non-commercial use, so this stops being free once you're earning. See [Stage 1](#stage-1--approved-and-earning). |
 | Google Sheets (or JSON file) | **Free** | Your wish list storage. |
 | Amazon Associates account | **Free** | Signing up costs nothing. |
 | The free `*.vercel.app` web address | **Free** | Works perfectly to share. |
 
-**Stage 0 total: $0.** Most classroom portals can happily live here forever.
+**Stage 0 total: $0.** A portal that never earns commissions can happily stay
+here. Once your Amazon links start earning, though, Vercel's free Hobby tier no
+longer applies — see [Stage 1](#stage-1--approved-and-earning).
 
 ---
 

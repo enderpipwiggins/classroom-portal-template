@@ -7,7 +7,12 @@ your class directly. When you become an Amazon Associate, qualifying purchases
 earn a small commission (at no extra cost to the buyer) that you can put toward
 more classroom needs.
 
-Built with Angular and designed to run on **Vercel's free Hobby tier**.
+Built with Angular and designed to run on **Vercel's free Hobby tier**
+. One
+honest caveat: that free tier is for *non-commercial* use, so once your links
+start earning commissions, Vercel expects you to move to its **Pro** plan
+(about **$20/month**) — the kind of cost the classroom fund is meant to cover.
+See [Costs Over Time](docs/costs.md) for the full picture.
 
 > **New to all this?** Start with the **[Teacher's Guide](docs/teacher-guide.md)** —
 > a step-by-step, plain-language walkthrough with no jargon. You do **not** need
@@ -40,7 +45,13 @@ npm test           # run the unit tests
 ```
 
 With zero configuration the site runs on bundled sample data and the default
-theme. To personalize it, copy `.env.example` to `.env` and edit the values, or
+theme. To personalize it, run the guided setup:
+
+```bash
+npm run setup      # asks a few questions and writes your .env
+```
+
+Prefer to do it by hand? Copy `.env.example` to `.env` and edit the values, or
 set them in Vercel. Every variable is optional.
 
 **Not comfortable with a terminal? That's expected.** The
@@ -54,6 +65,12 @@ the GitHub and Vercel websites instead — no terminal required.
 All personalization is done through environment variables, baked in at build
 time. See [`.env.example`](.env.example) for the annotated source of truth.
 
+> **The JSON values (`HOW_IT_WORKS_JSON`, `SOCIAL_LINKS_JSON`) look intimidating?**
+> You don't have to hand-write them. Copy the example from `.env.example` into any
+> AI assistant (ChatGPT, Claude, etc.), describe in plain words what you want it to
+> say, and ask it to hand you the finished line. Fiddly formatting like this is
+> exactly what those tools are good at — no prior coding knowledge needed.
+
 | Variable | What it does | Default |
 | --- | --- | --- |
 | `SITE_TITLE` | Site name in the header and browser tab | `Our Classroom Portal` |
@@ -62,6 +79,7 @@ time. See [`.env.example`](.env.example) for the annotated source of truth.
 | `SITE_URL` | Your live address, used for SEO/social previews | `https://example.com` |
 | `DONATIONS_TITLE` | Heading on the donations page | `Our Classroom Wish List` |
 | `DONATIONS_INTRO` | Intro paragraph on the donations page | (sample text) |
+| `HOW_IT_WORKS_JSON` | Landing-page "how it works" steps, as a JSON array of `{title, body}`. `[]` hides the section. A good spot to disclose where commissions go (e.g. a class party). | (three default steps) |
 | `CONTACT_EMAIL` | Address shown on the contact page | `teacher@example.com` |
 | `SOCIAL_LINKS_JSON` | Optional footer social links (JSON array) | none |
 | `THEME_INDEX` | Which theme to compile, `0`–`4` (`0` = your custom theme) | `0` |
@@ -86,6 +104,8 @@ time. See [`.env.example`](.env.example) for the annotated source of truth.
   domains, and a glossary.
 - **[Link Storage Options](docs/link-storage-options.md)** — compares Google
   Sheets, a JSON file, Airtable, Supabase, Notion, and Thirsty Affiliates.
+- **[Importing Your Amazon Wish List](docs/from-amazon-wishlist.md)** — turn an
+  existing Amazon Wish List into your donations page, one tracking link at a time.
 - **[Customizing the Look](docs/customizing-css.md)** — choosing a theme and
   editing your own colors and fonts through the GitHub website.
 - **[Costs Over Time](docs/costs.md)** — what's free, what costs money later, and
