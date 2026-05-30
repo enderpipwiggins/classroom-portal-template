@@ -260,6 +260,11 @@ no-code method is **Google Sheets**. (For the full comparison of methods, see
 > **Use your school's address with your name and room — never a home address**,
 > since it's publicly visible to anyone. Leave it unset to hide the address.
 
+> **Not using Amazon?** A Walmart (or any other retailer's) affiliate link drops
+> into the `url` column exactly like an Amazon one — only Amazon gets automatic
+> images and prices. See
+> [Using Other Affiliate Programs](other-affiliate-programs.md).
+
 ### Using Google Sheets (recommended)
 
 **One-time setup:**
