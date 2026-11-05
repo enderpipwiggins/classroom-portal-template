@@ -1,5 +1,7 @@
 # Classroom Portal
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H3V02A45DT)
+
 A free, ready-to-deploy website template for **classroom supply wish lists**. It
 gives you two pages — a friendly **landing page** and a **donations page** that
 lists items on Amazon — so families and community members can buy supplies for
